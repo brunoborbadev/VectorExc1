@@ -7,7 +7,8 @@ namespace VectorExc1
     {
         static void Main(string[] args)
         {
-            int n = 0;
+            int n = int.Parse(Console.ReadLine());
+            
             Product[] vect = new Product[n];
             for (int i = 0; i < n; i++)
             {
@@ -24,7 +25,7 @@ namespace VectorExc1
 
             double avg = sum / n;
 
-            Console.WriteLine("AVERAGE PRICE = " + avg.ToString("F2", CultureInfo.InvariantCulture));
+            Console.WriteLine("AVERAGE PRICE IS = " + avg.ToString("F2", CultureInfo.InvariantCulture));
 
 
         }
